@@ -16,6 +16,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
+    helm:
+      valueFiles:
+       - values/victoria-metrics-agent/values.yaml
     path: '.'
     repoURL: https://github.com/Sid129/grafana.git
     targetRevision: Head
